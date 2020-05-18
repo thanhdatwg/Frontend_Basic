@@ -1,0 +1,24 @@
+*{margin: 0px; padding: 0px;}
+#click{
+    margin-left : 400px;
+}
+
+.sangphai{
+    animation: sangphai 2s forwards;
+}
+@-webkit-keyframes sangphai{
+    0% {transform: translateX(200px) translateY(0px);}
+    50%{transform: translateX(200px) translateY(200px);}
+    100%{transform: translateX(300px) translateY(200px);}
+}
+
+#kcd{
+    animation: quaylai 2s forwards;
+} 
+ 
+@-webkit-keyframes quaylai{
+    100% {transform: translateX(200px) translateY(0px);}
+    50%{transform: translateX(200px) translateY(200px);}
+    0%{transform: translateX(300px) translateY(200px);}
+}
+

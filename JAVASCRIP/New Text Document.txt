@@ -1,0 +1,4 @@
+"use strict" :  chế độ nghiêm khắc , cần khai bao var trước biến 
+indexOf('') : Trả về vị trí của giá trị cần tìm 
+replace('can thay','gia tri thay the') : thay thế
+split('ki tu ngan cach') : biến chuỗi thành mảng

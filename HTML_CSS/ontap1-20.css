@@ -1,0 +1,11 @@
+.person{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.person .left{
+    width: 68%;
+}
+.person .right{
+    width: 30%;
+}

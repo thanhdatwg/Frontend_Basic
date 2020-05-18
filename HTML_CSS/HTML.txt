@@ -1,0 +1,10 @@
+1 . Các thẻ HTML : 
+b : in đậm
+i : in nghiêng 
+a : link 
+u : gạch chân 
+<ul>
+	li	: list 
+</ul>
+
+span : ko tự xuống dòng

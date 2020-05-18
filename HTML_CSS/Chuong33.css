@@ -1,0 +1,66 @@
+html,body {
+    height: 100%;
+    overflow-x: hidden;
+}
+.bo {
+   height: 100%;
+  
+}
+
+.menutrai{
+  
+    background: #206d20;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: cubic-bezier(.17,.67,.83,.67) 1s;
+}
+
+
+.vetrai{
+    
+    transform: translateX(0%);
+}
+
+h3.display-3.text-xs-center {
+    font-size: 38px;
+    text-align: center;
+    font-family: monospace;
+    color: white;
+}
+.nut{
+        margin-left: 400px;
+        width: 80px;
+        position: fixed;
+        z-index: 2;
+        cursor: pointer;
+    
+}
+li.list-group-item.active {
+    background: none;
+    z-index: 2;
+    color: #fff;
+    border-color: #f6f7f9;
+}
+
+.den {
+    position: fixed;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: #b6b3b3;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 1s;
+}
+.hienlen {
+    opacity: 1;
+    visibility: visible;
+}

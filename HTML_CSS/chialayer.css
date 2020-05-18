@@ -1,0 +1,39 @@
+.person{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.person .anhnen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    /* opacity: 0; */
+}
+.person .black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top : 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0;
+    transition: 0.4s;
+    
+}
+.person:hover .black{
+    opacity: 0.4;
+}
+.person .playlist{
+    position: absolute;
+    top : 30px;
+    left: 40px;
+    font-size : 30px;
+    color : white;
+    opacity: 0.3;
+ 
+}
+.person:hover .playlist{
+    opacity: 0.6;
+}

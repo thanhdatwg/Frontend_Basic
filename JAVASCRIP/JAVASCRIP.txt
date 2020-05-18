@@ -1,0 +1,24 @@
+"use strict" :  chế độ nghiêm khắc , cần khai bao var trước biến 
+"anonymous function" : hàm ko tên chỉ có giá trị đầu vào 
+"Closue Function" : hàm tạo ra biến bên trong nó và sd hàm khác bên trong nó
+"template string" : var x = "hello";var z = "<div> + x +</div>" == `<div> ${x} </div>` 
+
+createElement('h1') : Tạo một thẻ html mới
+inner.HTML : gắn nôi dụng bên trong một cái thẻ 
+document.getElementById('id phần tử') : lấy id 	
+appendChild(tenphantu) : gắn giá trị vào web
+
+ document.getElementsByTagName('h1') : lấy tất cả các thẻ <h1></h1>
+ document.getElementByClassName('') : lấy class ...
+ document.querySelector('tên thẻ,class,id') : lấy phần tử đầu tiên trong mảng đã tìm đc
+ document.querySelectorAll('.tenclass,#id,[data-têndata]') : xuất ra một mảng .đầu vào có thể là thẻ html , tên class , id , data-thuộc tính.
+ 
+ classList.remove('.tenclass') 
+ classList.add('.tenclass')
+ classList.toggle('.ten class')  = remove + add
+ 
+ document.addEventListener("DOMContentLoaded",function(){...},false) : load trang web trước.
+
+window.addEventListener("scroll",function(){});     biết người dùng khi nào cuộn chuột .
+window.pageYOffset ; xuất ra vị trí người dùng 
+object.offsetTop

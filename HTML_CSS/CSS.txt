@@ -1,0 +1,52 @@
+1 . Các thuộc tính CSS
+fa (ở head) => link đến thư viện font awesome(để tạo icon) (vào trang font awesome để xem tên icon)
+(có fa4 , fa5) là 2 bản mới nhất
+height : chiều cao
+width : chiều rộng 
+margin-left : lệch trái
+margin-right , top , bottom : lệch phải , trên , dưới
+font-family : phông chữ
+font-size : size  
+color : màu 
+display : flex ; chia cột 
+công cụ : faststone capture : đo màn hình 
+margin : auto (cho trang web ở giữa)
+justify-content  : space-between  (cách đều giữa các cột với nhau)
+.fa.fa-tenicon : tạo ra icon 
+nên sd nhiều class 1 lúc .(bài 18)
+display : block (ứng dụng 1 : để nó xuống dòng(các thẻ mà tự xuống dòng gọi là các thẻ block) . 2 : ở các thẻ ko tự xuống dòng(các thẻ này gọi là thẻ inline) thì khi dùng block nó sẽ sd đc các thuộc tính margin-top,bottom)
+đặc điểm của display : block là để có thể sd đc padding , còn đặc điểm của inline là không xuống dòng
+display : inline-block (sd đc cả 2 đặc điểm của inline và block)
+text-decoration : none ; (bỏ gạch chân ở thẻ a)
+text-transform : uppercase (viết hoa)
+transition : ...s ()
+text-align : center (cho các file text nó căn giữa div bố) == display : flex; + justify-content : center;
+display : flex; + align-items : center (căn dọc)
+border-radius : bo tròn
+border : 2px solid color : viền nổi
+opacity : 0 (làm biến mất) càng tăng lên càng thấy rõ
+visibility : hidden (biến mất)
+display : none (biến mất)
+flex-wrap : wrap 
+background-image : url() 
+position : relative (bố) ; position: absolute; (layer con)
+transform : rorate(360deg); (xoay 1 vòng)
+perspective: 1000px; (3D)(đặt ở div bố)
+transform-origin: 0 0 (góc quay)
+transform: rotateY(10deg) : quay theo trục y 
+line-height = height => text sẽ căn giữa 
+visibility : hidden + opacity : 0 == visibility : visible + opacity : 1
+background-image:    -webkit-linear-gradient(left,black 0%, #0000ff00 50%,black 100% );  - đổ màu nền 
+background-size: cover; (img full width)
+
+transform: translateX(290px); di chuyển theo trục 0x;
+cursor: pointer; đưa chuột vào hình bàn tay
+position: fixed; kéo xuống vẫn giữ nguyên vị trị,chạy theo chỗ kéo. + top , left như position:absolute;
+z-index : 1 nằm dưới d-idex : 2 nằm dưới z-index 3 ;nhưng phải sd các thuộc tính position : relative,absolute,fixed
+ overflow-x: hidden; (để trong html,body : làm cho trang web không có thanh kéo ngang bên dưới)
+ transition: linear 1s : chuyển động đều 
+ cubic-bezier : gia tốc di chuyển ; ví dụ transition: cubic-bezier(.17,.67,.83,.67) 1s; (search cubic-bezier để chỉnh gia tốc)
+
+ box-sizing : content-box; Giá trị mặc định, nghĩa là giá trị width và height chỉ áp dụng cho khu vực nội dung bên trong, không bao gồm padding, border và margin.
+box-sizing :border-box; Khi thiết lập giá trị này, thì width và heigh sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin.
+box-sizing :padding-box; Với giá trị này thì width và height chỉ bao gồm cho phần nội dung và padding, không bao gồm border và margin.

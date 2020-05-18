@@ -1,0 +1,56 @@
+*{margin: 0; padding: 0;}
+:root{
+    --mautrang: rgb(255, 255, 255);
+    --mauxam: rgb(143, 141, 141);
+}
+.header{
+    width: 1350px;
+    height: 600px;
+    background-image: url(Belton.jpg);
+    background-size: cover;
+    position: relative;
+}
+.header::before{
+    content: ' ';
+    position: absolute;
+    top : 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image:    -webkit-linear-gradient(left,#00000026 0%, #0000ff00 50%,#0000007a 100% );
+}
+.header .header_1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+.header .header_1 a.align{
+    color : var(--mautrang);
+    padding-left: 30px;
+}
+.header .header_1 a img{
+    width: 100px;
+}
+.header .header_1 .right_header_1{
+    padding-right: 30px;
+}
+.header .header_1 .right_header_1 a{
+    color : var(--mauxam);
+    transition: 0.4s;
+    padding-left:7px;
+}
+.header .header_1 .right_header_1 a:hover{
+    color : var(--mautrang);
+}
+.header .header_2{
+    width: 520px;
+    height: 220px;
+    padding-top: 18%;
+    padding-left: 15%;
+    color : var(--mautrang);
+}

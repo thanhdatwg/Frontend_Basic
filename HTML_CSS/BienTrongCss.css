@@ -1,0 +1,34 @@
+:root{
+    --mauvang : rgb(226, 226, 98);
+    --mauden : rgb(10, 9, 9);
+    --cochu : 20px;
+}
+body{
+    background-color : var(--mauvang);
+}
+a.chu{
+    text-decoration: none;
+    color : var(--mauden);
+    font-size: var(--cochu);
+    position: relative;
+    background-image: -webkit-linear-gradient(right,black,green);
+}
+a.chu:hover{
+    background-image: -webkit-linear-gradient(right,rgb(192, 187, 187),rgb(44, 95, 44));
+}
+
+a.chu:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: blueviolet;
+    opacity: 0;
+    transition: 0.4s;
+}
+a.chu:hover:after{
+    opacity: 1;
+    transition: 0.6s;
+}

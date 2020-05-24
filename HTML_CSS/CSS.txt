@@ -50,3 +50,9 @@ z-index : 1 nằm dưới d-idex : 2 nằm dưới z-index 3 ;nhưng phải sd c
  box-sizing : content-box; Giá trị mặc định, nghĩa là giá trị width và height chỉ áp dụng cho khu vực nội dung bên trong, không bao gồm padding, border và margin.
 box-sizing :border-box; Khi thiết lập giá trị này, thì width và heigh sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin.
 box-sizing :padding-box; Với giá trị này thì width và height chỉ bao gồm cho phần nội dung và padding, không bao gồm border và margin.
+
+2. các thuộc tính css3 
+transform : translateX[Y,Z] : di chuyển theo các trục tương ứng 
+transform-style :  preserve-3d : vị trí nằm ở div trên , để div dươics sd đc translateZ
+perspective : ...px; giống với transform-style :  preserve-3d
+transform:rorateX,Y,Z(...deg) 

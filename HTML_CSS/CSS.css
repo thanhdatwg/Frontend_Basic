@@ -1,0 +1,68 @@
+*{
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    overflow-x: hidden;/*đặt trong html,body : làm cho trang web không có thanh kéo ngang bên dưới*/
+    box-sizing : content-box; /*Giá trị mặc định, nghĩa là giá trị width và height chỉ áp dụng cho khu vực nội dung bên trong, không bao gồm padding, border và margin.*/
+    box-sizing :border-box;/* Khi thiết lập giá trị này, thì width và heigh sẽ bao gồm cho cả phần nội dung, padding và border nhưng không bao gồm margin.*/
+    box-sizing :padding-box;/* Với giá trị này thì width và height chỉ bao gồm cho phần nội dung và padding, không bao gồm border và margin.*/
+
+
+
+    margin : 50px 40px 30px 20px;  /*Trên phải dưới trái (theo chiều kim đồng hồ ) ; Margin (lề) là thuộc tính được sử dụng để tạo khoảng trống từ đường viền của phần tử ra phía ngoài*/
+    margin: auto;
+    padding: 50px 40px 30px 20px; /*là khoảng cách giữa đường viền và nội dung phần tử */
+
+
+    display: flex; /* sử dụng thuộc tính display : flex mới sử dụng được các thuộc tính ở dưới , tra w3school */
+    flex : 2;/*div con chiếm 2 phần trong div bố có sd flex*/
+    flex-wrap: wrap ,nowrap,wrap-reverse,initial;
+    flex-direction: row,row-reverse,column,column-reverse,initial;
+    justify-content: flex-end,flex-start,center,space-between,space-between,initial;
+    align-items: center; /*căn dọc*/
+
+
+    display : block; /*sử dụng block thì có thể sd đc padding*/
+    display: inline;/*sử dụng inline để các thẻ xuống dòng nằm trên 
+    1 dòng*/
+
+
+    text-decoration: none; /*mất gạch chân ở thẻ a*/
+    list-style: none; /*mất chấm tròn ở trước thẻ li*/
+    text-transform: uppercase; /*Viết hoa*/
+    text-align: center; /*== flex + justìy-content : center*/
+    height: 80px; line-height: 80px; /*height = line-height => căn giữa theo chiều dọc  == flex + align-items: center; */
+
+
+    position: relative; /*div bố*/
+    position: absolute; /*div con phải + left :;top:;right;bottom*/ 
+    position: fixed;/*giữ nguyên vị trí div,chạy theo chỗ kéo + top ,left như position : absolute*/
+    z-index: 1;/*1 nằm dưới 2 nằm dưới 3 nhưng phải sử dụng các thuộc tính position ở trên mới sd đc z-index*/
+
+
+    opacity: 0.5; /*độ mờ ; càng bé càng không nhìn thấy*/
+    visibility: hidden;/*biến mất == opacity = 0*/
+    visibility: visible; /*hiện lên == opacity = 1*/
+    border-radius: 10%;/*bo tròn viền*/
+    border : 2px solid color;/*bo viền */
+    transition: 0.6s;/*tốc độ thay đổi*/
+    transition: linear 1s; /*chuyển động đều*/
+    transform: rotateX(360deg);/*quay 1 vòng theo trục Ox ,Oy, Oz*/
+    transform: translateX(180px) ;/*di chuyển theo trục Ox,Oy,Oz*/
+    perspective: 1000px; /*3D đặt ở div bố , sd thuộc tính này mới sd đc các thuộc tính liên quan đến trục Oz*/
+    transform-style: preserve-3d;/*vị trí nằm ở div trên để sd được các thuộc tính liên quan đến trục Oz */
+    transform-origin: 0 0;/*góc quay*/
+    cursor: pointer;/*di chuột vào hiển thị bàn tay*/
+    /* cubic-bezier : gia tốc di chuyển ; ví dụ transition: cubic-bezier(.17,.67,.83,.67) 1s; (search cubic-bezier để chỉnh gia tốc) */
+
+
+    background-image: url(); /*font là img */
+    background-image: -webkit-linear-gradient(left,black 0%, #0000ff00 50%,black 100%); /*đổ màu nền*/
+    background-size: cover; /*img full width*/
+
+
+}

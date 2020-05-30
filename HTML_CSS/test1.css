@@ -16,8 +16,9 @@
     width: 400px;
     height: 300px;
     transition: 0.6s;
+    transform-origin: 100% 100%;
     
 }
 .to:hover .nho img{
-    transform: rotateZ(360deg);
+    transform : scale(0.5);
 }

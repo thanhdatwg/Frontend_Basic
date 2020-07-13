@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    width: 90%;
+    margin : auto;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+.logo-container{
+    flex : 1;
+}
+
+.nav-links{
+    flex : 2;
+    justify-content: space-around;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color : #5f5579;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* Done header */
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin : auto;
+    align-items: center;
+    min-height: 80vh;
+}
+.introduction{
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    color : rgb(78, 78, 78);
+}
+.intro-text p{
+    margin-top : 8px;
+    color : #585722;
+    font-size: 22px;
+}
+.cta{
+    padding : 50px 0px 0px 0px;
+}
+.cta-select_1{
+    border : 2px solid #c36cbb;
+    background: transparent;
+    color : #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+.cta-select_2{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #c36cbb;
+    cursor: pointer;
+    color : white;
+    margin-left: 25px;
+}
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.cover img.drop{
+    height: 60vh;
+    transition: 0.6s;
+
+}
+
+/* Done Section.presentation */
+
+img.big-circle{
+    position: absolute;
+    top : 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.7;
+    height: 80%;
+}
+img.medium-circle{
+    position: absolute;
+    top : 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.6;
+    height: 60%;
+}
+img.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+
+}
+.laptop-select{
+    position: absolute;
+    bottom: 10%;
+    right: 14%;
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width : 1024px){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        /* margin-top : 5vh; */
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 16px;
+    }
+    .cta-select_2{
+        margin-left: 20px;
+    }
+}
